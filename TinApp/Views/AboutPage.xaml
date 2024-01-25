@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:TinApp.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <Grid Margin="0,30,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="This is an application made for Tina by Paolo!" FontSize="16" Padding="0,0,0,0"/>
+             </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

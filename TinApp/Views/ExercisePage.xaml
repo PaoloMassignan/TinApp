@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinApp.Views.ExercisePage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:TinApp.ViewModels"
+             xmlns:style="clr-namespace:TinApp.Resources.Styles"
+             xmlns:template="clr-namespace:TinApp.Views.Templates"
+             xmlns:model="clr-namespace:TinApp.Models"  
+             x:DataType="local:ItemsViewModel"
+             x:Name="Exercise">
+    <StackLayout>
+        <RefreshView IsRefreshing="{Binding IsBusy}"
+             Command="{Binding LoadItemsCommand}">
+            <CollectionView ItemsSource="{Binding Items}"
+                        SelectionMode="Single"
+                        SelectionChangedCommand="{Binding ItemSelectionChangedCommand}"
+                        SelectionChangedCommandParameter="{Binding SelectedItem, Source={RelativeSource Self}}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <template:KeyValueView />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </StackLayout>
+    
+</ContentPage>

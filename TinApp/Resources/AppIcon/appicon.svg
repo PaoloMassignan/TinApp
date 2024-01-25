@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="456"
+   height="456"
+   viewBox="0 0 456 456"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="appicon.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="63.969112"
+       y="150.82625"
+       width="370.90347"
+       height="140.26255"
+       id="rect2" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.7039474"
+     inkscape:cx="228"
+     inkscape:cy="228"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     x="0"
+     y="0"
+     width="456"
+     height="456"
+     fill="#512BD4"
+     id="rect1" />
+  <text
+     xml:space="preserve"
+     id="text1"
+     style="font-size:74.6667px;white-space:pre;shape-inside:url(#rect2);fill:#ffffff"
+     transform="translate(23.474903,22.301158)"><tspan
+       x="63.96875"
+       y="218.94687"
+       id="tspan1">TinApp</tspan></text>
+</svg>

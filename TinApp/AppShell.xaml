@@ -1,0 +1,23 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:TinApp.Views"
+       xmlns:style="clr-namespace:TinApp.Resources.Styles"
+       xmlns:app="clr-namespace:TinApp"
+       Title="TinApp"
+       x:Class="TinApp.AppShell" 
+       FlyoutIcon="{FontImage FontFamily=FontAwesomeSolid, Color=White, 
+        Glyph={x:Static style:FontAwesomeSolid.Bars}}"
+       FlyoutBackgroundColor="{StaticResource LightGray}">
+
+
+    <FlyoutItem Title="About" Icon="{FontImage FontFamily=FontAwesomeSolid, Color=Black,
+        Glyph={x:Static style:FontAwesomeSolid.Question}}">
+        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem x:Name="RootItem" Title="Exercise Rotuing" Icon="{FontImage FontFamily=FontAwesomeSolid, Color=Black, 
+        Glyph={x:Static style:FontAwesomeSolid.Home}}">
+        <ShellContent Route="ExercisePage" ContentTemplate="{DataTemplate local:ExercisePage}">
+        </ShellContent>
+    </FlyoutItem>
+</Shell>

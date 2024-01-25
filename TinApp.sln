@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinApp", "TinApp\TinApp.csproj", "{8E57BB39-9F07-492E-8481-9A97FA97D38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinApp2", "TinApp2\TinApp2.csproj", "{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E57BB39-9F07-492E-8481-9A97FA97D38C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93597AC8-58B7-4F24-A08B-60AA0CF25E3C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12FBE007-91BB-4F29-B4E1-543F530D4AF9}
+	EndGlobalSection
+EndGlobal
