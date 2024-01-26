@@ -1,43 +1,37 @@
 ﻿@page "/"
 @using System.Reflection
+@using MudBlazor
+@using MudBlazor.Components
+@inject NavigationManager NavigationManager
 
-@foreach (var source in imageSources)
-{
-    <img src='@source' height="200" width="200"/>    
-}
+<MudSimpleTable>
+    <MudPaper align-center>
+        @foreach (var cat in categories)
+        {
+            <MudTr>
+                <MudTd>
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="()=>ShowCategory(cat)">@cat</MudButton>
+                    </MudTd>
+                </MudTr>
+        }
+    </MudPaper>
+</MudSimpleTable>
 
 
 
 
-@code{
-    private List<string> imageSources = new List<string>();
+@code {
+    private List<string> categories = new List<string>();
 
 
     protected override void OnInitialized()
     {
-       var items = new List<string>();
-        Assembly a = Assembly.GetExecutingAssembly();
-        var exercises = new List<string>();
-        foreach (var resource in a.GetManifestResourceNames())
-        {
-            if (!resource.Contains("Exercises"))
-                continue;
-            exercises.Add(resource);
-        }
-        imageSources = exercises.Select(x => ImageService.Instance.GetImage(x)).ToList();
+        categories = ImageService.Instance.GetCategories();
     }
 
-    private string GetPrefix(string x)
+    protected void ShowCategory(string category)
     {
-        int firstIndex = x.IndexOf("Exercises.") + "Exercises.".Length;
-        int secondIndex = x.IndexOf(".", firstIndex);
-        return x.Substring(firstIndex, secondIndex - firstIndex);
+        NavigationManager.NavigateTo($"Category/{category}");
     }
 
-    private string GetPath(string x)
-    {
-        int firstIndex = x.LastIndexOf(".");
-        int secondIndex = x.LastIndexOf(".", firstIndex - 1) + 1;
-        return x.Substring(secondIndex);
-    }
 }
